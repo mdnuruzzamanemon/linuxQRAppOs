@@ -1,0 +1,144 @@
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dfdbdb;
+    background-image: url("./static/appBG1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+button {
+    margin: 10px 0;
+}
+
+#qr-output img {
+    max-width: 100%;
+    height: auto;
+}
+.container
+{
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container h1
+{
+    color: #111;
+}
+.btn
+{
+    display: inline-block;
+    background-color: #fff;
+    border: none;
+    border-radius: 6px;
+    color: #111;
+    width: 280px;
+    padding: 10px 15px;
+    margin: 20px 0;
+    font-size: 22px;
+    
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), 
+                -4px -4px 8px rgba(255, 255, 255, 0.1);
+                transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.btn:hover
+{
+    transform: scale(1.05);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4), 
+                -6px -6px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* text to qr */
+.controlBtnBox
+{
+    display: flex;
+    justify-content: space-between;
+}
+.controlBtn
+{
+    width: auto;
+    margin: 20px 25px;
+}
+.textInput
+{
+    background-color: #fff;
+    color: #111;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 500px;
+    height: 150px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), 
+                -4px -4px 8px rgba(255, 255, 255, 0.1);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    outline: none; /* Remove default outline */
+    resize: vertical;
+    border-radius: 5px;
+}
+.textInput:focus
+{
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4), 
+                -6px -6px 12px rgba(255, 255, 255, 0.2);
+    transform: scale(1.02); 
+}
+/* .textInput::placeholder
+{
+    color: #1B4242;
+} */
+.qrOutput
+{
+    margin: 20px 0;
+}
+.textOutput
+{
+    background-color: #fff;
+    color: #111;
+    border: 1px solid #111;
+    padding: 10px;
+    font-size: 17px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), 
+                -4px -4px 8px rgba(255, 255, 255, 0.1);
+    margin: 20px 0;
+    border-radius: 5px;
+}
+.qrImgInput
+{
+    background-color: #fff;
+    color: #111;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), 
+                -4px -4px 8px rgba(255, 255, 255, 0.1);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    margin: 20px 0;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+}
+.qrImgInput:hover
+{
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4), 
+                -6px -6px 12px rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.scriptQrOutput img
+{
+    max-width: 500px;
+    max-height: 500px;
+}
+.hidden {
+    display: none;
+}

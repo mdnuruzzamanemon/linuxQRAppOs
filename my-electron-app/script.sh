@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo apt-get update
+
+sudo apt-get install -y apt-transport-https base-passwd bsdutils ca-certificates code curl dash diffutils efibootmgr findutils fonts-indic gnupg google-chrome-stable grep grub-common grub-efi-amd64-bin grub-efi-amd64-signed grub-gfxpayload-lists grub-pc grub-pc-bin grub2-common gzip hostname hyphen-en-us init language-pack-en language-pack-en-base language-pack-gnome-en language-pack-gnome-en-base libdebconfclient0 libflashrom1 libftdi1-2 libllvm13 libreoffice-help-common libreoffice-help-en-us libzbar0 linux-generic-hwe-22.04 login mokutil mythes-en-us ncurses-base ncurses-bin nodejs open-vm-tools-desktop os-prober python3 python3-pip python3.10-venv shim-signed software-properties-common thunderbird-locale-en thunderbird-locale-en-us ubuntu-desktop ubuntu-desktop-minimal ubuntu-minimal ubuntu-standard ubuntu-wallpapers wget

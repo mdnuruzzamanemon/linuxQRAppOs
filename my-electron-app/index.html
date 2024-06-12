@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-menu">
+        <div class="container">
+            <h1>Choose your option..!</h1>
+            <button class="btn" onclick="showGenerator()">Text to QR Generator</button>
+            <button class="btn" onclick="showReader()">Get Data from QR</button>
+            <button class="btn" onclick="showScriptQR()">Get Application Script QR</button>
+            <!-- New Button for File Share -->
+            <button class="btn" onclick="showFileShare()">File Share</button>
+        </div>
+    </div>
+
+    <div id="qr-generator" class="hidden">
+        <div class="container">
+            <h1>Text to QR Generator</h1>
+            <div class="qrOutput" id="qr-output"></div>
+            <textarea class="textInput" id="qr-input" placeholder="Enter text" rows="10" cols="20"></textarea>
+            <div class="controlBtnBox">
+                <button class="btn controlBtn" onclick="generateQR()">Generate QR</button>
+                <button class="btn controlBtn" onclick="goBack()">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="qr-reader" class="hidden">
+        <div class="container">
+            <h1>Get Data from QR</h1>
+            <input class="qrImgInput" type="file" id="qr-file" accept="image/*">
+            <div class="textOutput hidden" id="qr-data"></div>
+            <div class="controlBtnBox">
+                <button id="readQRBtn" class="btn controlBtn" onclick="readQR()">Read QR</button>
+                <button id="readTryAgainBtn" class="btn controlBtn hidden" onclick="resetReadQR()">Try Again</button>
+                <button class="btn controlBtn" onclick="goBack()">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="script-qr" class="hidden">
+        <div class="container">
+            <h1>Get Application Script QR</h1>
+            <div class="scriptQrOutput" id="script-qr-output"></div>
+            <div class="controlBtnBox">
+                <button class="btn controlBtn" onclick="generateScriptQR()">Generate Script QR</button>
+                <button class="btn controlBtn" onclick="goBack()">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- New File Share Section -->
+    <div id="file-share" class="hidden">
+        <div class="container">
+            <h1>File Share</h1>
+            <input class="qrImgInput" type="file" id="file-input">
+            <div class="controlBtnBox">
+                <button class="btn controlBtn" onclick="generateLinkQR()">Generate Link QR</button>
+                <button class="btn controlBtn" onclick="goBack()">Back</button>
+            </div>
+            <div class="fileLinkQrOutput" id="file-link-qr-output"></div>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

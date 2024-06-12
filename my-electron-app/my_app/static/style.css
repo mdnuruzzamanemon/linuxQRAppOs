@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.mainBox
+{
+    margin: auto;
+}
+.btnBox
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.btnBox button
+{
+    border: none;
+    background-color: rgb(12, 175, 12);
+    color: #fff;
+    padding: 5px 10px;
+    width: 200px;
+    margin: 10px auto;
+}
